@@ -1,0 +1,81 @@
+{
+  "veri_turu": "özgün sentetik, şablonlardan üretilmiş, gerçek kullanıcı yorumu değil",
+  "toplam_veri": 1000,
+  "egitim_sayisi": 802,
+  "test_sayisi": 198,
+  "zor_ornek_sayisi": 40,
+  "secilen_temsil": "TF-IDF",
+  "parametreler": {
+    "agac__criterion": "entropy",
+    "agac__max_depth": 10,
+    "agac__min_samples_leaf": 1
+  },
+  "en_iyi_cv_macro_f1": 0.8885063497193213,
+  "train": {
+    "Accuracy": 0.9064837905236908,
+    "Precision": 0.8434237995824635,
+    "Recall": 1.0,
+    "F1": 0.9150622876557192,
+    "Macro-F1": 0.9055200481274435
+  },
+  "test": {
+    "Accuracy": 0.8686868686868687,
+    "Precision": 0.8125,
+    "Recall": 0.9479166666666666,
+    "F1": 0.875,
+    "Macro-F1": 0.8683510638297872
+  },
+  "zor_ornekler": {
+    "Accuracy": 0.425,
+    "Precision": 0.45161290322580644,
+    "Recall": 0.7,
+    "F1": 0.5490196078431373,
+    "Macro-F1": 0.3779580797836376
+  },
+  "ilk_karsilastirma": [
+    {
+      "Temsil": "Counting",
+      "Accuracy": 0.6919191919191919,
+      "Precision": 0.6190476190476191,
+      "Recall": 0.9479166666666666,
+      "F1": 0.7489711934156379,
+      "Macro-F1": 0.6751391914790608
+    },
+    {
+      "Temsil": "TF-IDF",
+      "Accuracy": 0.6919191919191919,
+      "Precision": 0.6190476190476191,
+      "Recall": 0.9479166666666666,
+      "F1": 0.7489711934156379,
+      "Macro-F1": 0.6751391914790608
+    }
+  ],
+  "cv_karsilastirma": [
+    {
+      "Temsil": "Counting",
+      "CV Macro-F1 ortalama": 0.641460223694658,
+      "Std": 0.07796194142045998,
+      "Kat skorları": [
+        0.519,
+        0.741,
+        0.651,
+        0.598,
+        0.699
+      ]
+    },
+    {
+      "Temsil": "TF-IDF",
+      "CV Macro-F1 ortalama": 0.683345547207443,
+      "Std": 0.048030703885286276,
+      "Kat skorları": [
+        0.706,
+        0.741,
+        0.673,
+        0.598,
+        0.699
+      ]
+    }
+  ],
+  "sklearn_surumu": "1.9.1",
+  "random_state": 42
+}
